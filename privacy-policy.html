@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Georgian Games mobile application. Learn how we collect, use, and protect your information.">
+    <meta name="keywords" content="Georgian Games, Privacy Policy, Mobile App, Privacy">
+    <meta name="author" content="Georgian Games">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy - Georgian Games">
+    <meta property="og:description" content="Privacy Policy for Georgian Games mobile application">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy - Georgian Games">
+    <meta name="twitter:description" content="Privacy Policy for Georgian Games mobile application">
+    
+    <title>Privacy Policy - Georgian Games</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #1E88E5;
+            --text-color: #212121;
+            --text-secondary: #616161;
+            --bg-color: #FFFFFF;
+            --border-color: #E0E0E0;
+            --hover-color: #1976D2;
+            --transition: all 0.3s ease;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 100px;
+        }
+        
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .language-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .language-button {
+            background: var(--bg-color);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-color);
+            transition: var(--transition);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .language-button:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 8px rgba(30, 136, 229, 0.1);
+        }
+        
+        .language-button::after {
+            content: '▼';
+            font-size: 10px;
+            margin-left: 4px;
+            transition: transform 0.3s ease;
+        }
+        
+        .language-button.active::after {
+            transform: rotate(180deg);
+        }
+        
+        .flag {
+            font-size: 20px;
+            line-height: 1;
+        }
+        
+        .language-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--bg-color);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+        
+        .language-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            padding: 12px 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .language-option:last-child {
+            border-bottom: none;
+        }
+        
+        .language-option:hover {
+            background-color: #F5F5F5;
+            color: var(--primary-color);
+        }
+        
+        .language-option.active {
+            background-color: #E3F2FD;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Content */
+        .content {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .content.fade-out {
+            opacity: 0;
+        }
+        
+        .content.fade-in {
+            opacity: 1;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-color);
+            line-height: 1.2;
+        }
+        
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: var(--text-color);
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        
+        strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+            border-bottom: 1px solid transparent;
+        }
+        
+        a:hover {
+            color: var(--hover-color);
+            border-bottom-color: var(--hover-color);
+        }
+        
+        .important {
+            background-color: #FFF3E0;
+            border-left: 4px solid #FF9800;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .important strong {
+            color: #E65100;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid var(--border-color);
+            margin: 40px 0;
+        }
+        
+        .agreement {
+            background-color: #E3F2FD;
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                padding-top: 90px;
+            }
+            
+            .language-switcher {
+                top: 15px;
+                right: 15px;
+            }
+            
+            .language-button {
+                padding: 8px 12px;
+                font-size: 13px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+                margin-top: 40px;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+            }
+            
+            body {
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 12px;
+                padding-top: 85px;
+            }
+            
+            h1 {
+                font-size: 1.75em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            .language-button span:not(.flag) {
+                display: none;
+            }
+            
+            .language-menu {
+                min-width: 150px;
+            }
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Print Styles */
+        @media print {
+            .language-switcher {
+                display: none;
+            }
+            
+            .container {
+                padding-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="language-dropdown">
+            <button class="language-button" id="languageButton" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+                <span class="flag" id="currentFlag">🇬🇧</span>
+                <span id="currentLanguage">English</span>
+            </button>
+            <div class="language-menu" id="languageMenu" role="menu">
+                <div class="language-option active" data-lang="en" role="menuitem" tabindex="0">
+                    <span class="flag">🇬🇧</span>
+                    <span>English</span>
+                </div>
+                <div class="language-option" data-lang="ka" role="menuitem" tabindex="0">
+                    <span class="flag">🇬🇪</span>
+                    <span>ქართული</span>
+                </div>
+                <div class="language-option" data-lang="ru" role="menuitem" tabindex="0">
+                    <span class="flag">🇷🇺</span>
+                    <span>Русский</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Content Container -->
+    <div class="container">
+        <div class="content" id="content">
+            <!-- English Content (Default) -->
+            <div data-lang="en">
+                <h1>Privacy Policy for Georgian Games</h1>
+                <p class="last-updated"><strong>Last Updated:</strong> January 30, 2026</p>
+                
+                <h2>Introduction</h2>
+                <p>Georgian Games ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+                
+                <h2>Information We Collect</h2>
+                
+                <h3>Personal Information</h3>
+                <p>When you use Georgian Games, we may collect:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Name, email address, and profile picture (when you sign in with Google, Apple, or Facebook)</li>
+                    <li><strong>Game Statistics:</strong> Your game scores, achievements, and gameplay history</li>
+                </ul>
+                
+                <h3>Audio Recording</h3>
+                <p>Our app uses audio recording for the following features:</p>
+                <ul>
+                    <li><strong>Reverse Audio Game:</strong> Records short audio clips to play them in reverse as part of the gameplay challenge</li>
+                    <li><strong>Mafia Game:</strong> Allows voice messages during gameplay (optional)</li>
+                </ul>
+                
+                <div class="important">
+                    <p><strong>Important:</strong></p>
+                    <ul>
+                        <li><strong>All audio recordings are stored locally on your device only</strong></li>
+                        <li><strong>We do NOT upload or store audio recordings on our servers</strong></li>
+                        <li>Audio recordings are automatically deleted when you exit the game</li>
+                        <li>You can deny microphone permission and still play other games that don't require audio</li>
+                    </ul>
+                </div>
+                
+                <h3>Automatically Collected Information</h3>
+                <ul>
+                    <li><strong>Device Information:</strong> Device type, operating system version</li>
+                    <li><strong>Usage Analytics:</strong> App usage statistics, game preferences (via Firebase Analytics)</li>
+                    <li><strong>Crash Reports:</strong> Technical data to improve app stability</li>
+                </ul>
+                
+                <h2>How We Use Your Information</h2>
+                <p>We use the collected information to:</p>
+                <ul>
+                    <li>Provide and maintain the app's functionality</li>
+                    <li>Authenticate your account and sync game progress</li>
+                    <li>Improve user experience and fix bugs</li>
+                    <li>Analyze app usage to add new features</li>
+                    <li>Send notifications about game updates (with your permission)</li>
+                </ul>
+                
+                <h2>Data Storage and Security</h2>
+                <ul>
+                    <li><strong>Authentication:</strong> Managed by Firebase Authentication (Google Cloud)</li>
+                    <li><strong>Game Data:</strong> Stored securely in Firebase Firestore</li>
+                    <li><strong>Audio Recordings:</strong> Stored locally on your device only (NOT on our servers)</li>
+                    <li><strong>Premium Purchases:</strong> Processed through Google Play Store (we don't store payment information)</li>
+                </ul>
+                
+                <h2>Third-Party Services</h2>
+                <p>Our app uses the following third-party services:</p>
+                <ul>
+                    <li><strong>Firebase (Google Cloud):</strong> Authentication, database, analytics</li>
+                    <li><strong>Google Play Services:</strong> In-app purchases, sign-in</li>
+                    <li><strong>Facebook Login:</strong> Optional sign-in method</li>
+                    <li><strong>Apple Sign-In:</strong> Optional sign-in method (iOS only)</li>
+                </ul>
+                <p>Each service has its own privacy policy:</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></li>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                    <li><a href="https://www.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer">Facebook Privacy Policy</a></li>
+                    <li><a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+                </ul>
+                
+                <h2>Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li><strong>Access</strong> your personal data</li>
+                    <li><strong>Delete</strong> your account and all associated data</li>
+                    <li><strong>Opt-out</strong> of analytics tracking</li>
+                    <li><strong>Revoke</strong> microphone permission at any time</li>
+                </ul>
+                <p>To delete your account, go to: <strong>Settings → Account → Delete Account</strong></p>
+                
+                <h2>Children's Privacy</h2>
+                <p>Our app is suitable for all ages. We do not knowingly collect personal information from children under 13 without parental consent.</p>
+                
+                <h2>Permissions We Request</h2>
+                
+                <h3>Required Permissions:</h3>
+                <ul>
+                    <li><strong>Internet Access:</strong> To sync game data and authenticate users</li>
+                </ul>
+                
+                <h3>Optional Permissions:</h3>
+                <ul>
+                    <li><strong>Microphone (RECORD_AUDIO):</strong> Used for audio-based games
+                        <ul>
+                            <li><strong>Reverse Audio game:</strong> Records audio to play in reverse</li>
+                            <li><strong>Mafia game:</strong> Optional voice messages during gameplay</li>
+                            <li>All recordings are stored locally on your device only</li>
+                            <li>Recordings are automatically deleted when you exit the game</li>
+                            <li>You can deny this permission and still play other games</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+                <ul>
+                    <li>Updating the "Last Updated" date</li>
+                    <li>Showing an in-app notification for major changes</li>
+                </ul>
+                
+                <h2>Contact Us</h2>
+                <p>If you have questions about this Privacy Policy, please contact us through the Google Play Store.</p>
+                
+                <hr>
+                
+                <p class="agreement"><strong>By using Georgian Games, you agree to this Privacy Policy.</strong></p>
+            </div>
+            
+            <!-- Georgian Content -->
+            <div data-lang="ka" style="display: none;">
+                <h1>კონფიდენციალურობის პოლიტიკა - Georgian Games</h1>
+                <p class="last-updated"><strong>ბოლო განახლება:</strong> 30 იანვარი, 2026</p>
+                
+                <h2>შესავალი</h2>
+                <p>Georgian Games ("ჩვენ") ვალდებულნი ვართ დავიცვათ თქვენი კონფიდენციალურობა. ეს პოლიტიკა განმარტავს როგორ ვაგროვებთ, ვიყენებთ და ვიცავთ თქვენს ინფორმაციას.</p>
+                
+                <h2>რა ინფორმაციას ვაგროვებთ</h2>
+                
+                <h3>პერსონალური ინფორმაცია</h3>
+                <ul>
+                    <li><strong>ანგარიშის ინფორმაცია:</strong> სახელი, ელფოსტა, პროფილის სურათი (Google, Apple, ან Facebook-ით შესვლისას)</li>
+                    <li><strong>თამაშის სტატისტიკა:</strong> ქულები, მიღწევები, თამაშის ისტორია</li>
+                </ul>
+                
+                <h3>აუდიო ჩაწერა</h3>
+                <p>აპლიკაცია იყენებს აუდიო ჩაწერას შემდეგი თამაშებისთვის:</p>
+                <ul>
+                    <li><strong>Reverse Audio თამაში:</strong> აწერს აუდიოს უკუღმა დასაკრავად</li>
+                    <li><strong>მაფიის თამაში:</strong> ხმოვანი შეტყობინებები თამაშის დროს (არასავალდებულო)</li>
+                </ul>
+                
+                <div class="important">
+                    <p><strong>მნიშვნელოვანი:</strong></p>
+                    <ul>
+                        <li><strong>ყველა ჩანაწერი ინახება მხოლოდ თქვენს მოწყობილობაზე</strong></li>
+                        <li><strong>არ ვტვირთავთ ჩანაწერებს სერვერზე</strong></li>
+                        <li>ჩანაწერები ავტომატურად იშლება თამაშის დასრულების შემდეგ</li>
+                        <li>შეგიძლიათ უარი თქვათ მიკროფონზე და თამაშოთ სხვა თამაშები</li>
+                    </ul>
+                </div>
+                
+                <h3>ავტომატურად შეგროვებული ინფორმაცია</h3>
+                <ul>
+                    <li><strong>მოწყობილობის ინფორმაცია:</strong> ტიპი, ოპერაციული სისტემის ვერსია</li>
+                    <li><strong>გამოყენების ანალიტიკა:</strong> აპლიკაციის გამოყენების სტატისტიკა</li>
+                    <li><strong>შეცდომების რეპორტები:</strong> ტექნიკური მონაცემები სტაბილურობის გასაუმჯობესებლად</li>
+                </ul>
+                
+                <h2>როგორ ვიყენებთ ინფორმაციას</h2>
+                <p>ინფორმაციას ვიყენებთ:</p>
+                <ul>
+                    <li>აპლიკაციის ფუნქციონირებისთვის</li>
+                    <li>ანგარიშის ავთენტიფიკაციისა და პროგრესის სინქრონიზაციისთვის</li>
+                    <li>მომხმარებლის გამოცდილების გაუმჯობესებისთვის</li>
+                    <li>ახალი ფუნქციების დამატებისთვის</li>
+                    <li>შეტყობინებების გასაგზავნად (თქვენი ნებართვით)</li>
+                </ul>
+                
+                <h2>მონაცემთა შენახვა და უსაფრთხოება</h2>
+                <ul>
+                    <li><strong>ავთენტიფიკაცია:</strong> Firebase Authentication (Google Cloud)</li>
+                    <li><strong>თამაშის მონაცემები:</strong> Firebase Firestore</li>
+                    <li><strong>აუდიო ჩანაწერები:</strong> მხოლოდ თქვენს მოწყობილობაზე</li>
+                    <li><strong>პრემიუმ შესყიდვები:</strong> Google Play Store-ის მეშვეობით</li>
+                </ul>
+                
+                <h2>მესამე მხარის სერვისები</h2>
+                <p>აპლიკაცია იყენებს:</p>
+                <ul>
+                    <li><strong>Firebase (Google Cloud):</strong> ავთენტიფიკაცია, მონაცემთა ბაზა, ანალიტიკა</li>
+                    <li><strong>Google Play Services:</strong> შესყიდვები, შესვლა</li>
+                    <li><strong>Facebook Login:</strong> შესვლის ოფცია</li>
+                    <li><strong>Apple Sign-In:</strong> შესვლის ოფცია (iOS)</li>
+                </ul>
+                <p>თითოეულ სერვისს აქვს საკუთარი კონფიდენციალურობის პოლიტიკა:</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></li>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                    <li><a href="https://www.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer">Facebook Privacy Policy</a></li>
+                    <li><a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+                </ul>
+                
+                <h2>თქვენი უფლებები</h2>
+                <p>თქვენ გაქვთ უფლება:</p>
+                <ul>
+                    <li><strong>წვდომა</strong> თქვენს მონაცემებზე</li>
+                    <li><strong>წაშლა</strong> ანგარიშისა და ყველა მონაცემის</li>
+                    <li><strong>გამორთვა</strong> ანალიტიკის თვალყურის დევნება</li>
+                    <li><strong>გაუქმება</strong> მიკროფონის ნებართვა ნებისმიერ დროს</li>
+                </ul>
+                <p>ანგარიშის წასაშლელად: <strong>პარამეტრები → ანგარიში → ანგარიშის წაშლა</strong></p>
+                
+                <h2>ბავშვების კონფიდენციალურობა</h2>
+                <p>აპლიკაცია შესაფერისია ყველა ასაკისთვის. ჩვენ არ ვაგროვებთ 13 წლამდე ბავშვების მონაცემებს მშობლების თანხმობის გარეშე.</p>
+                
+                <h2>ნებართვები</h2>
+                
+                <h3>სავალდებულო:</h3>
+                <ul>
+                    <li><strong>ინტერნეტ წვდომა:</strong> მონაცემების სინქრონიზაციისთვის</li>
+                </ul>
+                
+                <h3>არასავალდებულო:</h3>
+                <ul>
+                    <li><strong>მიკროფონი (RECORD_AUDIO):</strong> აუდიო თამაშებისთვის
+                        <ul>
+                            <li><strong>Reverse Audio:</strong> აუდიოს უკუღმა დაკრა</li>
+                            <li><strong>მაფია:</strong> ხმოვანი შეტყობინებები</li>
+                            <li>ჩანაწერები ინახება მხოლოდ თქვენს მოწყობილობაზე</li>
+                            <li>ავტომატურად იშლება თამაშის შემდეგ</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h2>ცვლილებები</h2>
+                <p>შეიძლება დროდადრო განვაახლოთ ეს პოლიტიკა. ვაცნობებთ ცვლილებების შესახებ:</p>
+                <ul>
+                    <li>"ბოლო განახლების" თარიღის შეცვლით</li>
+                    <li>აპლიკაციაში შეტყობინებით (მნიშვნელოვანი ცვლილებების შემთხვევაში)</li>
+                </ul>
+                
+                <h2>დაგვიკავშირდით</h2>
+                <p>კითხვების შემთხვევაში მოგვწერეთ Google Play Store-ის მეშვეობით.</p>
+                
+                <hr>
+                
+                <p class="agreement"><strong>Georgian Games-ის გამოყენებით თქვენ ეთანხმებით ამ კონფიდენციალურობის პოლიტიკას.</strong></p>
+            </div>
+            
+            <!-- Russian Content -->
+            <div data-lang="ru" style="display: none;">
+                <h1>Политика конфиденциальности - Georgian Games</h1>
+                <p class="last-updated"><strong>Последнее обновление:</strong> 30 января 2026</p>
+                
+                <h2>Введение</h2>
+                <p>Georgian Games ("мы") обязуется защищать вашу конфиденциальность. Эта Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию.</p>
+                
+                <h2>Какую информацию мы собираем</h2>
+                
+                <h3>Личная информация</h3>
+                <ul>
+                    <li><strong>Информация аккаунта:</strong> Имя, адрес электронной почты, фото профиля (при входе через Google, Apple или Facebook)</li>
+                    <li><strong>Игровая статистика:</strong> Ваши очки, достижения, история игр</li>
+                </ul>
+                
+                <h3>Запись аудио</h3>
+                <p>Приложение использует запись аудио для следующих функций:</p>
+                <ul>
+                    <li><strong>Игра Reverse Audio:</strong> Записывает короткие аудиоклипы для воспроизведения в обратном порядке</li>
+                    <li><strong>Игра Мафия:</strong> Голосовые сообщения во время игры (опционально)</li>
+                </ul>
+                
+                <div class="important">
+                    <p><strong>Важно:</strong></p>
+                    <ul>
+                        <li><strong>Все аудиозаписи хранятся только на вашем устройстве</strong></li>
+                        <li><strong>Мы НЕ загружаем записи на наши серверы</strong></li>
+                        <li>Записи автоматически удаляются после выхода из игры</li>
+                        <li>Вы можете отказать в доступе к микрофону и играть в другие игры</li>
+                    </ul>
+                </div>
+                
+                <h3>Автоматически собираемая информация</h3>
+                <ul>
+                    <li><strong>Информация об устройстве:</strong> Тип устройства, версия операционной системы</li>
+                    <li><strong>Аналитика использования:</strong> Статистика использования приложения</li>
+                    <li><strong>Отчеты об ошибках:</strong> Технические данные для улучшения стабильности</li>
+                </ul>
+                
+                <h2>Как мы используем информацию</h2>
+                <p>Мы используем информацию для:</p>
+                <ul>
+                    <li>Обеспечения функциональности приложения</li>
+                    <li>Аутентификации аккаунта и синхронизации прогресса</li>
+                    <li>Улучшения пользовательского опыта</li>
+                    <li>Анализа использования для добавления новых функций</li>
+                    <li>Отправки уведомлений об обновлениях (с вашего разрешения)</li>
+                </ul>
+                
+                <h2>Хранение и безопасность данных</h2>
+                <ul>
+                    <li><strong>Аутентификация:</strong> Firebase Authentication (Google Cloud)</li>
+                    <li><strong>Игровые данные:</strong> Firebase Firestore</li>
+                    <li><strong>Аудиозаписи:</strong> Только на вашем устройстве</li>
+                    <li><strong>Премиум покупки:</strong> Через Google Play Store</li>
+                </ul>
+                
+                <h2>Сторонние сервисы</h2>
+                <p>Приложение использует:</p>
+                <ul>
+                    <li><strong>Firebase (Google Cloud):</strong> Аутентификация, база данных, аналитика</li>
+                    <li><strong>Google Play Services:</strong> Покупки, вход</li>
+                    <li><strong>Facebook Login:</strong> Опциональный метод входа</li>
+                    <li><strong>Apple Sign-In:</strong> Опциональный метод входа (iOS)</li>
+                </ul>
+                <p>Каждый сервис имеет свою политику конфиденциальности:</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></li>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                    <li><a href="https://www.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer">Facebook Privacy Policy</a></li>
+                    <li><a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+                </ul>
+                
+                <h2>Ваши права</h2>
+                <p>Вы имеете право:</p>
+                <ul>
+                    <li><strong>Получить доступ</strong> к своим данным</li>
+                    <li><strong>Удалить</strong> аккаунт и все связанные данные</li>
+                    <li><strong>Отключить</strong> отслеживание аналитики</li>
+                    <li><strong>Отозвать</strong> разрешение микрофона в любое время</li>
+                </ul>
+                <p>Чтобы удалить аккаунт: <strong>Настройки → Аккаунт → Удалить аккаунт</strong></p>
+                
+                <h2>Конфиденциальность детей</h2>
+                <p>Приложение подходит для всех возрастов. Мы не собираем личную информацию детей до 13 лет без согласия родителей.</p>
+                
+                <h2>Разрешения</h2>
+                
+                <h3>Обязательные:</h3>
+                <ul>
+                    <li><strong>Доступ к интернету:</strong> Для синхронизации данных</li>
+                </ul>
+                
+                <h3>Опциональные:</h3>
+                <ul>
+                    <li><strong>Микрофон (RECORD_AUDIO):</strong> Для аудио-игр
+                        <ul>
+                            <li><strong>Reverse Audio:</strong> Запись аудио для воспроизведения в обратном порядке</li>
+                            <li><strong>Мафия:</strong> Голосовые сообщения</li>
+                            <li>Записи хранятся только на вашем устройстве</li>
+                            <li>Автоматически удаляются после игры</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h2>Изменения</h2>
+                <p>Мы можем периодически обновлять эту Политику. Мы уведомим вас об изменениях:</p>
+                <ul>
+                    <li>Обновлением даты "Последнее обновление"</li>
+                    <li>Уведомлением в приложении (для важных изменений)</li>
+                </ul>
+                
+                <h2>Свяжитесь с нами</h2>
+                <p>Если у вас есть вопросы, свяжитесь с нами через Google Play Store.</p>
+                
+                <hr>
+                
+                <p class="agreement"><strong>Используя Georgian Games, вы соглашаетесь с этой Политикой конфиденциальности.</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Language data
+        const languages = {
+            en: {
+                flag: '🇬🇧',
+                name: 'English'
+            },
+            ka: {
+                flag: '🇬🇪',
+                name: 'ქართული'
+            },
+            ru: {
+                flag: '🇷🇺',
+                name: 'Русский'
+            }
+        };
+        
+        // Get elements
+        const languageButton = document.getElementById('languageButton');
+        const languageMenu = document.getElementById('languageMenu');
+        const currentFlag = document.getElementById('currentFlag');
+        const currentLanguage = document.getElementById('currentLanguage');
+        const content = document.getElementById('content');
+        const languageOptions = document.querySelectorAll('.language-option');
+        const contentDivs = document.querySelectorAll('[data-lang]');
+        
+        // Get saved language or default to English
+        let currentLang = localStorage.getItem('privacyPolicyLang') || 'en';
+        
+        // Initialize language
+        function setLanguage(lang) {
+            // Update button
+            currentFlag.textContent = languages[lang].flag;
+            currentLanguage.textContent = languages[lang].name;
+            
+            // Update content visibility
+            contentDivs.forEach(div => {
+                if (div.getAttribute('data-lang') === lang) {
+                    div.style.display = 'block';
+                } else {
+                    div.style.display = 'none';
+                }
+            });
+            
+            // Update active state in menu
+            languageOptions.forEach(option => {
+                if (option.getAttribute('data-lang') === lang) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+            
+            // Save to localStorage
+            localStorage.setItem('privacyPolicyLang', lang);
+            
+            // Update meta description based on language
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                if (lang === 'ka') {
+                    metaDescription.content = 'კონფიდენციალურობის პოლიტიკა Georgian Games მობილური აპლიკაციისთვის.';
+                } else if (lang === 'ru') {
+                    metaDescription.content = 'Политика конфиденциальности для мобильного приложения Georgian Games.';
+                } else {
+                    metaDescription.content = 'Privacy Policy for Georgian Games mobile application. Learn how we collect, use, and protect your information.';
+                }
+            }
+        }
+        
+        // Toggle menu
+        languageButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            languageMenu.classList.toggle('active');
+            languageButton.classList.toggle('active');
+            languageButton.setAttribute('aria-expanded', languageMenu.classList.contains('active'));
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!languageButton.contains(e.target) && !languageMenu.contains(e.target)) {
+                languageMenu.classList.remove('active');
+                languageButton.classList.remove('active');
+                languageButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+        
+        // Handle language selection
+        languageOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const lang = option.getAttribute('data-lang');
+                setLanguage(lang);
+                languageMenu.classList.remove('active');
+                languageButton.classList.remove('active');
+                languageButton.setAttribute('aria-expanded', 'false');
+                
+                // Smooth scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Keyboard navigation
+            option.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    option.click();
+                }
+            });
+        });
+        
+        // Initialize on page load
+        setLanguage(currentLang);
+        
+        // Keyboard accessibility for language button
+        languageButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                languageButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
+
