@@ -63,13 +63,12 @@ We use the collected information to:
 - **Authentication:** Managed by Firebase Authentication (Google Cloud)
 - **Game Data:** Stored securely in Firebase Firestore
 - **Audio Recordings:** Stored locally on your device only (NOT on our servers)
-- **Premium Purchases:** Processed through Google Play Store (we don't store payment information)
 
 ## Third-Party Services
 
 Our app uses the following third-party services:
 - **Firebase (Google Cloud):** Authentication, database, analytics
-- **Google Play Services:** In-app purchases, sign-in
+- **Google Play Services:** Sign-in
 - **Facebook Login:** Optional sign-in method
 - **Apple Sign-In:** Optional sign-in method (iOS only)
 
@@ -166,13 +165,12 @@ Georgian Games ("ჩვენ") ვალდებულნი ვართ დ�
 - **ავთენტიფიკაცია:** Firebase Authentication (Google Cloud)
 - **თამაშის მონაცემები:** Firebase Firestore
 - **აუდიო ჩანაწერები:** მხოლოდ თქვენს მოწყობილობაზე
-- **პრემიუმ შესყიდვები:** Google Play Store-ის მეშვეობით
 
 ## მესამე მხარის სერვისები
 
 აპლიკაცია იყენებს:
 - **Firebase (Google Cloud):** ავთენტიფიკაცია, მონაცემთა ბაზა, ანალიტიკა
-- **Google Play Services:** შესყიდვები, შესვლა
+- **Google Play Services:** შესვლა
 - **Facebook Login:** შესვლის ოფცია
 - **Apple Sign-In:** შესვლის ოფცია (iOS)
 
@@ -262,13 +260,12 @@ Georgian Games ("мы") обязуется защищать вашу конфи�
 - **Аутентификация:** Firebase Authentication (Google Cloud)
 - **Игровые данные:** Firebase Firestore
 - **Аудиозаписи:** Только на вашем устройстве
-- **Премиум покупки:** Через Google Play Store
 
 ## Сторонние сервисы
 
 Приложение использует:
 - **Firebase (Google Cloud):** Аутентификация, база данных, аналитика
-- **Google Play Services:** Покупки, вход
+- **Google Play Services:** Вход
 - **Facebook Login:** Опциональный метод входа
 - **Apple Sign-In:** Опциональный метод входа (iOS)
 
@@ -366,4 +363,3 @@ Generate a complete, production-ready `privacy-policy.html` file that:
 ---
 
 **Please generate the complete HTML file now.**
-
