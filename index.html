@@ -3,202 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GERAPPA — a fast and fun trivia game. Download on the App Store and Google Play.">
-    <meta property="og:title" content="GERAPPA">
-    <meta property="og:description" content="A fast and fun trivia game.">
+    <meta name="description" content="GERAPPA by GERAPPA LLC: party and trivia games for friends — Mafia, Spy, Trivia, Charades and more. Available on the App Store and Google Play.">
+    <meta property="og:title" content="GERAPPA — party games for friends">
+    <meta property="og:description" content="Mafia, Spy, Trivia, Charades and more party games in one app.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.gerappa.games/">
-    <title>GERAPPA</title>
-
+    <meta property="og:image" content="https://www.gerappa.games/assets/games/mafia.webp">
+    <link rel="icon" href="/assets/logo/gerappa-icon-gold.svg" type="image/svg+xml">
+    <title>GERAPPA — party games for friends</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #1E88E5;
-            --text-color: #212121;
-            --text-secondary: #616161;
-            --bg-color: #FFFFFF;
-            --border-color: #E0E0E0;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 48px 16px;
-        }
-
-        h1 {
-            font-size: 3.5em;
-            font-weight: 800;
-            letter-spacing: 0.02em;
-            margin-bottom: 12px;
-        }
-
-        .tagline {
-            font-size: 1.15em;
-            color: var(--text-secondary);
-            margin-bottom: 36px;
-        }
-
-        .stores {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .store {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            min-width: 190px;
-            padding: 10px 20px;
-            border-radius: 12px;
-            background: #000000;
-            color: #FFFFFF;
-            text-decoration: none;
-            text-align: left;
-            transition: opacity 0.2s ease;
-        }
-
-        .store:hover {
-            opacity: 0.85;
-        }
-
-        .store svg {
-            width: 26px;
-            height: 26px;
-            flex-shrink: 0;
-        }
-
-        .store small {
-            display: block;
-            font-size: 11px;
-            opacity: 0.8;
-        }
-
-        .store strong {
-            display: block;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 1.2;
-        }
-
-        footer {
-            border-top: 1px solid var(--border-color);
-            padding: 24px 16px;
-            display: flex;
-            justify-content: center;
-            gap: 8px 24px;
-            flex-wrap: wrap;
-            color: var(--text-secondary);
-            font-size: 0.9em;
-        }
-
-        footer a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: var(--primary-color);
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2.6em;
-            }
-
-            .store {
-                width: 100%;
-                max-width: 280px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600;700&family=Noto+Serif+Georgian:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-    <main>
-        <h1>GERAPPA</h1>
-        <p class="tagline" data-i18n="tagline">A fast and fun trivia game</p>
-
-        <div class="stores">
-            <a class="store" href="https://apps.apple.com/app/gerappa/id6758739456" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-                <span><small data-i18n="appStoreSmall">Download on the</small><strong>App Store</strong></span>
-            </a>
-            <a class="store" href="https://play.google.com/store/apps/details?id=com.georgiangames.app" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.4 11.6 3.6 21.4c-.36-.2-.6-.6-.6-1.07V2.87c0-.47.24-.87.6-1.07z"/><path fill="#FBBC04" d="m16.8 8.2-3.4 3.4 3.4 3.4 3.85-2.2c.75-.43.75-1.97 0-2.4L16.8 8.2z"/><path fill="#EA4335" d="M13.4 11.6 3.6 21.4c.3.17.68.18 1.04-.02L16.8 15 13.4 11.6z"/><path fill="#4285F4" d="M3.6 1.8c.3-.17.68-.18 1.04.02L16.8 8.2l-3.4 3.4L3.6 1.8z"/></svg>
-                <span><small data-i18n="playSmall">Get it on</small><strong>Google Play</strong></span>
-            </a>
+    <header class="site">
+        <div class="wrap">
+            <a class="brand" href="/">GERAPPA</a>
+            <nav class="links">
+                <a href="/" aria-current="page" data-i18n="navHome">Home</a>
+                <a href="#games" data-i18n="navGames">Games</a>
+                <a href="/support" data-i18n="navSupport">Support</a>
+                <a href="/privacy" data-i18n="navPrivacy">Privacy</a>
+            </nav>
+            <div class="lang" role="group" aria-label="Language">
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="ka">KA</button>
+                <button type="button" data-lang="ru">RU</button>
+            </div>
         </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap">
+                <img class="hero-logo" src="/assets/logo/gerappa-logo.svg" alt="GERAPPA" width="760" height="300">
+                <h1 data-i18n="heroTitle">Party games for friends</h1>
+                <p class="lead" data-i18n="heroLead">Mafia, Spy, Trivia, Charades and more — on one phone at the table or online with friends.</p>
+                <div class="stores">
+                    <a class="btn dark" href="https://apps.apple.com/app/gerappa/id6758739456" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                        <span><small data-i18n="appStoreSmall">Download on the</small>App Store</span>
+                    </a>
+                    <a class="btn dark" href="https://play.google.com/store/apps/details?id=com.georgiangames.app" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.4 11.6 3.6 21.4c-.36-.2-.6-.6-.6-1.07V2.87c0-.47.24-.87.6-1.07z"/><path fill="#FBBC04" d="m16.8 8.2-3.4 3.4 3.4 3.4 3.85-2.2c.75-.43.75-1.970 0-2.4L16.8 8.2z"/><path fill="#EA4335" d="M13.4 11.6 3.6 21.4c.3.17.68.18 1.04-.02L16.8 15 13.4 11.6z"/><path fill="#4285F4" d="M3.6 1.8c.3-.17.68-.18 1.04.02L16.8 8.2l-3.4 3.4L3.6 1.8z"/></svg>
+                        <span><small data-i18n="playSmall">Get it on</small>Google Play</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="games">
+            <div class="wrap">
+                <div class="panel">
+                    <div class="ribbon" data-i18n="gamesTitle">Games</div>
+                    <div class="games">
+                        <div class="game featured"><div class="game-inner"><img src="/assets/games/mafia.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g1t">Mafia</h3><span class="tag" data-i18n="tagPhone">1 phone</span><p data-i18n="g1d">Roles, night and day phases and a built-in narrator.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/trivia.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g3t">Trivia</h3><span class="tag" data-i18n="tagOnline">Online</span><p data-i18n="g3d">Quiz battles with friends across many categories.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/spy.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g2t">Spy</h3><span class="tag" data-i18n="tagPhone">1 phone</span><p data-i18n="g2d">Everyone knows the word except the spy. Find them.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/sharadebi.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g4t">Charades</h3><span class="tag" data-i18n="tagPhone">1 phone</span><p data-i18n="g4d">Phone on your forehead — guess what your team shows.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/liar.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g5t">Liar</h3><span class="tag" data-i18n="tagOnline">Online</span><p data-i18n="g5d">Fool your friends with a fake answer, spot the real one.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/intuition_edge.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g6t">Intuition Edge</h3><span class="tag" data-i18n="tagOnline">Online</span><p data-i18n="g6d">Bet on the answer you trust and grow your capital.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/truth_or_dare.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g7t">Truth or Dare</h3><span class="tag" data-i18n="tagPhone">1 phone</span><p data-i18n="g7d">Hundreds of questions and dares for every company.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/ra-sad-rodis.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g8t">What? Where? When?</h3><span class="tag" data-i18n="tagPhone">1 phone</span><p data-i18n="g8d">The host reads the question, the team finds the answer.</p></div></div>
+                        <div class="game"><div class="game-inner"><img src="/assets/games/ganafase.webp" alt="" loading="lazy"><div class="shade"></div><h3 data-i18n="g9t">Ganafase</h3><span class="tag" data-i18n="tagPhone">1 phone</span><p data-i18n="g9d">Give a clue, let your partner guess the number.</p></div></div>
+                    </div>
+                    <p class="muted more" data-i18n="moreGames">Plus: Stretchy Cat, 2048, Snake, dice, coin flip, timer and other party tools.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="wrap">
+                <div class="panel">
+                    <div class="ribbon" data-i18n="aboutTitle">About us</div>
+                    <p data-i18n="aboutText">GERAPPA is developed and published by <b>GERAPPA LLC</b>, an independent game studio. We make social games that bring people together — for parties, family evenings and game nights with friends.</p>
+                    <div class="facts">
+                        <div class="fact"><b data-i18n="fact1Title">10+ games</b><span class="muted" data-i18n="fact1Text">in one free app</span></div>
+                        <div class="fact"><b data-i18n="fact2Title">Online rooms</b><span class="muted" data-i18n="fact2Text">play with friends on their own phones</span></div>
+                        <div class="fact"><b data-i18n="fact3Title">One phone</b><span class="muted" data-i18n="fact3Text">pass-and-play party mode</span></div>
+                        <div class="fact"><b data-i18n="fact4Title">3 languages</b><span class="muted">ქართული · English · Русский</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrap">
+                <div class="panel contact-box">
+                    <div class="ribbon" data-i18n="contactTitle">Contact</div>
+                    <p class="muted" data-i18n="contactText">Questions, feedback or partnership requests — write to us:</p>
+                    <p style="margin: 10px 0 18px"><a class="email" href="mailto:info@gerappa.games">info@gerappa.games</a></p>
+                    <a class="btn" href="/support" data-i18n="contactBtn">Support &amp; FAQ</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <span>© 2026 GERAPPA</span>
-        <span><span data-i18n="contact">Contact</span>: <a href="mailto:info@gerappa.games">info@gerappa.games</a></span>
-        <a href="/privacy" data-i18n="privacy">Privacy Policy</a>
+    <footer class="site">
+        <div class="wrap">
+            <span>© 2026 GERAPPA LLC</span>
+            <a href="mailto:info@gerappa.games">info@gerappa.games</a>
+            <a href="/support" data-i18n="navSupport">Support</a>
+            <a href="/privacy" data-i18n="navPrivacy">Privacy</a>
+        </div>
     </footer>
 
     <script>
-        const translations = {
+        window.T = {
             en: {
-                tagline: 'A fast and fun trivia game',
-                appStoreSmall: 'Download on the',
-                playSmall: 'Get it on',
-                contact: 'Contact',
-                privacy: 'Privacy Policy'
+                _title: 'GERAPPA — party games for friends',
+                navHome: 'Home', navGames: 'Games', navSupport: 'Support', navPrivacy: 'Privacy',
+                heroTitle: 'Party games for friends',
+                heroLead: 'Mafia, Spy, Trivia, Charades and more — on one phone at the table or online with friends.',
+                appStoreSmall: 'Download on the', playSmall: 'Get it on',
+                gamesTitle: 'Games', tagOnline: 'Online', tagPhone: '1 phone',
+                g1t: 'Mafia', g1d: 'Roles, night and day phases and a built-in narrator.',
+                g2t: 'Spy', g2d: 'Everyone knows the word except the spy. Find them.',
+                g3t: 'Trivia', g3d: 'Quiz battles with friends across many categories.',
+                g4t: 'Charades', g4d: 'Phone on your forehead — guess what your team shows.',
+                g5t: 'Liar', g5d: 'Fool your friends with a fake answer, spot the real one.',
+                g6t: 'Intuition Edge', g6d: 'Bet on the answer you trust and grow your capital.',
+                g7t: 'Truth or Dare', g7d: 'Hundreds of questions and dares for every company.',
+                g8t: 'What? Where? When?', g8d: 'The host reads the question, the team finds the answer.',
+                g9t: 'Ganafase', g9d: 'Give a clue, let your partner guess the number.',
+                moreGames: 'Plus: Stretchy Cat, 2048, Snake, dice, coin flip, timer and other party tools.',
+                aboutTitle: 'About us',
+                aboutText: 'GERAPPA is developed and published by <b>GERAPPA LLC</b>, an independent game studio. We make social games that bring people together — for parties, family evenings and game nights with friends.',
+                fact1Title: '10+ games', fact1Text: 'in one free app',
+                fact2Title: 'Online rooms', fact2Text: 'play with friends on their own phones',
+                fact3Title: 'One phone', fact3Text: 'pass-and-play party mode',
+                fact4Title: '3 languages',
+                contactTitle: 'Contact',
+                contactText: 'Questions, feedback or partnership requests — write to us:',
+                contactBtn: 'Support &amp; FAQ'
             },
             ka: {
-                tagline: 'სწრაფი და სახალისო ვიქტორინა',
-                appStoreSmall: 'ჩამოტვირთე',
-                playSmall: 'ჩამოტვირთე',
-                contact: 'კონტაქტი',
-                privacy: 'კონფიდენციალურობის პოლიტიკა'
+                _title: 'GERAPPA — თამაშები მეგობრებისთვის',
+                navHome: 'მთავარი', navGames: 'თამაშები', navSupport: 'დახმარება', navPrivacy: 'კონფიდენციალურობა',
+                heroTitle: 'თამაშები მეგობრებისთვის',
+                heroLead: 'მაფია, ჯაშუში, ვიქტორინა, შარადები და სხვა — ერთ ტელეფონზე მაგიდასთან ან ონლაინ მეგობრებთან ერთად.',
+                appStoreSmall: 'ჩამოტვირთე', playSmall: 'ჩამოტვირთე',
+                gamesTitle: 'თამაშები', tagOnline: 'ონლაინ', tagPhone: '1 ტელეფონი',
+                g1t: 'მაფია', g1d: 'როლები, ღამისა და დღის ფაზები და ჩაშენებული წამყვანი.',
+                g2t: 'ჯაშუში', g2d: 'სიტყვა ყველამ იცის, გარდა ჯაშუშისა. იპოვე ის.',
+                g3t: 'ვიქტორინა', g3d: 'ვიქტორინის ბრძოლები მეგობრებთან, ბევრ კატეგორიაში.',
+                g4t: 'შარადები', g4d: 'ტელეფონი შუბლზე — გამოიცანი, რას გიხსნის გუნდი.',
+                g5t: 'მატყუარა', g5d: 'მოატყუე მეგობრები ყალბი პასუხით და იპოვე ნამდვილი.',
+                g6t: 'ინტუიციის ზღვარი', g6d: 'დადე ფსონი პასუხზე, რომელიც გჯერა, და გაზარდე კაპიტალი.',
+                g7t: 'სიმართლე თუ მოქმედება', g7d: 'ასობით კითხვა და დავალება ნებისმიერი კომპანიისთვის.',
+                g8t: 'რა? სად? როდის?', g8d: 'წამყვანი კითხულობს კითხვას, გუნდი პასუხს ეძებს.',
+                g9t: 'განაფასე', g9d: 'მიეცი მინიშნება და პარტნიორმა რიცხვი გამოიცნოს.',
+                moreGames: 'ასევე: Stretchy Cat, 2048, გველი, კამათელი, მონეტა, ტაიმერი და სხვა.',
+                aboutTitle: 'ჩვენ შესახებ',
+                aboutText: 'GERAPPA-ს ქმნის და ავრცელებს <b>GERAPPA LLC</b> — დამოუკიდებელი თამაშების სტუდია. ვქმნით სოციალურ თამაშებს, რომლებიც ადამიანებს აერთიანებს — წვეულებებისთვის, ოჯახური საღამოებისთვის და მეგობრებთან თამაშისთვის.',
+                fact1Title: '10+ თამაში', fact1Text: 'ერთ უფასო აპლიკაციაში',
+                fact2Title: 'ონლაინ ოთახები', fact2Text: 'ითამაშე მეგობრებთან, თითოეული თავის ტელეფონზე',
+                fact3Title: 'ერთი ტელეფონი', fact3Text: 'გადაეცი ტელეფონი და ითამაშე',
+                fact4Title: '3 ენა',
+                contactTitle: 'კონტაქტი',
+                contactText: 'კითხვები, შენიშვნები ან თანამშრომლობა — მოგვწერე:',
+                contactBtn: 'დახმარება და კითხვები'
             },
             ru: {
-                tagline: 'Быстрая и весёлая викторина',
-                appStoreSmall: 'Загрузите в',
-                playSmall: 'Доступно в',
-                contact: 'Контакты',
-                privacy: 'Политика конфиденциальности'
+                _title: 'GERAPPA — игры для друзей',
+                navHome: 'Главная', navGames: 'Игры', navSupport: 'Поддержка', navPrivacy: 'Конфиденциальность',
+                heroTitle: 'Игры для компании друзей',
+                heroLead: 'Мафия, Шпион, Викторина, Шарады и другие — на одном телефоне за столом или онлайн с друзьями.',
+                appStoreSmall: 'Загрузите в', playSmall: 'Доступно в',
+                gamesTitle: 'Игры', tagOnline: 'Онлайн', tagPhone: '1 телефон',
+                g1t: 'Мафия', g1d: 'Роли, ночные и дневные фазы и встроенный ведущий.',
+                g2t: 'Шпион', g2d: 'Все знают слово, кроме шпиона. Вычислите его.',
+                g3t: 'Викторина', g3d: 'Викторины с друзьями по множеству категорий.',
+                g4t: 'Шарады', g4d: 'Телефон ко лбу — угадайте, что показывает команда.',
+                g5t: 'Лжец', g5d: 'Обманите друзей ложным ответом и найдите настоящий.',
+                g6t: 'Грань интуиции', g6d: 'Ставьте на ответ, которому верите, и растите капитал.',
+                g7t: 'Правда или действие', g7d: 'Сотни вопросов и заданий для любой компании.',
+                g8t: 'Что? Где? Когда?', g8d: 'Ведущий читает вопрос, команда ищет ответ.',
+                g9t: 'Ganafase', g9d: 'Дайте подсказку — партнёр угадывает число.',
+                moreGames: 'А также: Stretchy Cat, 2048, Змейка, кубики, монетка, таймер и другое.',
+                aboutTitle: 'О нас',
+                aboutText: 'GERAPPA разрабатывает и издаёт <b>GERAPPA LLC</b> — независимая игровая студия. Мы делаем социальные игры, которые объединяют людей — для вечеринок, семейных вечеров и игр с друзьями.',
+                fact1Title: '10+ игр', fact1Text: 'в одном бесплатном приложении',
+                fact2Title: 'Онлайн-комнаты', fact2Text: 'играйте с друзьями, каждый на своём телефоне',
+                fact3Title: 'Один телефон', fact3Text: 'передавайте телефон по кругу',
+                fact4Title: '3 языка',
+                contactTitle: 'Контакты',
+                contactText: 'Вопросы, отзывы или сотрудничество — напишите нам:',
+                contactBtn: 'Поддержка и вопросы'
             }
         };
-
-        // Same key as the privacy page, so a language picked there is reused here
-        let lang;
-        try {
-            lang = localStorage.getItem('privacyPolicyLang');
-        } catch (e) {}
-        if (!translations[lang]) {
-            lang = (navigator.language || 'en').slice(0, 2);
-        }
-        if (translations[lang]) {
-            document.documentElement.lang = lang;
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                el.textContent = translations[lang][el.getAttribute('data-i18n')];
-            });
-        }
     </script>
+    <script src="/assets/i18n.js"></script>
 </body>
 </html>
